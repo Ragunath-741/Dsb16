@@ -1,0 +1,55 @@
+PROGRAM
+
+clear all
+
+close all
+
+ap-0.5%
+
+A-50,
+
+fp-1000,
+
+f-2000,
+
+1-5000;
+
+wp-2 fp/f
+
+ws-2*1/1
+
+wn-[wp.ws];
+
+[n]-buttord(wp.ws.ap.as); [ba]-butter(n,wn/stop),
+
+w-0:0.01:pi;
+
+h-freqptha,w),
+
+p-anglethy,
+
+mag-20*log10(abs());
+
+subplot(2,1,1),
+
+plot(w/pi,mag),
+
+grid,
+
+xlabel('normalized frequency),
+
+ylabel('magnitude in db
+
+title('magnitude response(band stof filter)
+
+subplot(2,1,2),
+
+plot(w/pi.p);
+
+grid;
+
+xlabel('normalized frequency)
+
+ylabel('phase in radians,
+
+title('phase response(bandstop filter/
